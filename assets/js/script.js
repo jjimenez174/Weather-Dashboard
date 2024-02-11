@@ -10,19 +10,19 @@ var searchHistory = document.querySelector("#search-history");
 
 // Main Dashboard Display
 var createWeatherCard = (cityName, weatherItem, index) => {
-    if (index === 0) {
-      return `
-        <div class="current-weather">
-          <h2>${cityName} (${dayjs(weatherItem.dt_txt).format("MM/DD/YYYY")})</h2>
+   if (index === 0) {
+    return `
+      <div class="current-weather">
+        <h2>${cityName} (${dayjs(weatherItem.dt_txt).format("MM/DD/YYYY")})</h2>
           <div class="weather-info">
-            <img class="weather-icon-a" src="http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" />
-            <div>
-              <h4>Temperature:${weatherItem.main.temp}°F</h4>
-              <h4>Wind:${weatherItem.wind.speed} M/s</h4>
-              <h4>Humidity:${weatherItem.main.humidity}%</h4>
-            </div>
+          <img class="weather-icon-a" src="http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" />
+          <div>
+             <h4>Temperature:${weatherItem.main.temp}°F</h4>
+            <h4>Wind:${weatherItem.wind.speed} M/s</h4>
+            <h4>Humidity:${weatherItem.main.humidity}%</h4>
           </div>
-        </div>`;
+        </div>
+      </div>`;
 //5-day Forecast        
     } else {
       return `<ul class="col-2 day">

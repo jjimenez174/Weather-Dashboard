@@ -1,3 +1,4 @@
+/*CSS Styles*/
 :root{
     --primery: lightskyblue;
     --secondary: aliceblue;
@@ -13,30 +14,103 @@
 body{
     background-color: var(--primery);
 }
+/*Header*/
 h1{
     background: var(--secondary);
     color: var(--dark);
-    padding: 10px;
+    padding: 18px 0;
     margin-bottom: 10px; 
     text-align: center;
-
 }
-.weather-input h3{
-    color: var(--dark)
+.container{
+    display:flex;
+    gap: 30px;
+    padding: 10px;
+}
+/*Enter City*/
+h3{
+    color: var(--dark);
 }
 .weather-input{
-    width: 350px;
+    width: 550px;
     margin-left: -50px;
 }
 .weather-input input{
-    width: 100%;
-    height: 35px;
+    width: 80%;
+    height: 40px;
     outline: none;
     padding: 0 12px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 8px 0;
     font-size: 20px;
     border-radius: 2px;
     border: 1px solid var(--dark);
+}
+.weather-input .separator{
+    height: 1px;
+    width: 80%;
+    margin: 25px 0;
+    background: steelblue;
+}
+/*Buttons*/
+.weather-input button{
+    width: 80%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--dark);
+    border-radius: 2px;
+    background: var(--secondary);
+    margin: 10px 0 5px 0;
+}
+.weather-input .clear-button{
+    background: steelblue;
+    color: white;
+}
+/*Main Dashboard Style*/
+.weather-data{
+    color: var(--dark);
+    border: 3px solid var(--secondary);
+    border-radius: 5px;
+    justify-content: space-between;
+    text-align: center;
+    width: 70%;
+    height: 60%;
+    margin-top: -12px;
+}
+.current-weather h2{
+    font-size: 35px;
+    margin-top: 2%;
+}
+.weather-data h4{
+    font-size: 22px;
+    margin-top: 8px;
+}
+/*5-day Forecast*/
+h2{
+    color: var(--dark);
+    margin-left: 1%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+.day-forecast{
+    display: flex;
+    gap: 10px;
+}
+.day {
+    background: steelblue;
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    padding: 12px 30px;
+    border: 1px solid var(--dark);
+    
+}
+.five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 18px;
 }
 .weather-icon-a{
     width: 100px;
