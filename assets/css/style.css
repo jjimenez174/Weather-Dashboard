@@ -94,10 +94,6 @@ main {
     color: var(--dark);
     margin-top: 30px;
 }
-.day-forecast{
-    gap: 10px;
- 
-}
 .day {
     background: steelblue;
     color: white;
@@ -106,7 +102,6 @@ main {
     text-align: center;
     padding: 15px 30px;
     border: 1px solid var(--dark);
-    
 }
 .five-day-forecast {
     display: flex;
