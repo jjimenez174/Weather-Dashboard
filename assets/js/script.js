@@ -17,9 +17,9 @@ var createWeatherCard = (cityName, weatherItem, index) => {
           <div class="weather-info">
           <img class="weather-icon-a" src="http://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" />
           <div>
-             <h4>Temperature:${weatherItem.main.temp}°F</h4>
-            <h4>Wind:${weatherItem.wind.speed} M/s</h4>
-            <h4>Humidity:${weatherItem.main.humidity}%</h4>
+             <h4>Temperature: ${weatherItem.main.temp}°F</h4>
+            <h4>Wind: ${weatherItem.wind.speed} M/s</h4>
+            <h4>Humidity: ${weatherItem.main.humidity}%</h4>
           </div>
         </div>
       </div>`;

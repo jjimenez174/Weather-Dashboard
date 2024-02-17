@@ -2,22 +2,23 @@
 
 ## Descriptioin
 
-The weather Dashboard displays the forecast of any city is search.
+The weather dashboard displays the forecast when a city is searched.
 
 ## Feautures
 
 * City Name
-* Data Display
+* Date Display
 * A Weather Icon
 * Weather's Information
     * Temperature
     * Humidity
     * Wind Speed
+* Can use the Return key to enter
 * Previous Cities are Save.
 
 ## Website Preview
 
-![image]()
+![image](./assets/image/WDSS.png)
 
 ## Link Deploy Application
 
