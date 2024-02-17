@@ -122,30 +122,31 @@ main {
     width: 50px;
     height: 50px;
 }
+
 /*Small Screens*/
 @media (max-width: 550px) {
-    .weather-input{
-        margin-left: 50px;
-    }
-    .container{
-        flex-wrap: wrap;
-        padding: 15px;
-    }
-    .weather-input{
-        width:100%;
-    }
-    .day-forecast{
-        margin-left: 85px;
-    }
-    .five-day-forecast{
+.weather-input{
+    margin-left: 50px;
+}
+.container{
+    flex-wrap: wrap;
+     padding: 15px;
+}
+.weather-input{
+     width:100%;
+}
+.day-forecast{
+     margin-left: 85px;
+}
+.five-day-forecast{
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-gap: 10px;
      margin-left: 40px;
-    }
-    .weather-data{
+}
+.weather-data{
        margin-top: 10px;
        margin-left: 70px;
        border: none;
-    }
+}
 }
